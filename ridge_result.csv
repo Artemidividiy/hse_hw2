@@ -1,0 +1,17 @@
+,ridge_model,alpha_val,rmse_test,r2_test
+0,"Pipeline(steps=[('robustscaler', RobustScaler()),
+                ('ridge', Ridge(alpha=0.0001, random_state=121))])",0.0001,36418.03510642306,0.5056554986886532
+1,"Pipeline(steps=[('robustscaler', RobustScaler()),
+                ('ridge', Ridge(alpha=0.001, random_state=121))])",0.001,36417.94684864079,0.5056578947375542
+2,"Pipeline(steps=[('robustscaler', RobustScaler()),
+                ('ridge', Ridge(alpha=0.01, random_state=121))])",0.01,36417.07024357769,0.5056816927610259
+3,"Pipeline(steps=[('robustscaler', RobustScaler()),
+                ('ridge', Ridge(alpha=0.1, random_state=121))])",0.1,36408.866671914795,0.505904375084538
+4,"Pipeline(steps=[('robustscaler', RobustScaler()),
+                ('ridge', Ridge(alpha=1, random_state=121))])",1.0,36361.52274399381,0.507188524838547
+5,"Pipeline(steps=[('robustscaler', RobustScaler()),
+                ('ridge', Ridge(alpha=10, random_state=121))])",10.0,36350.14137225485,0.5074969823710151
+6,"Pipeline(steps=[('robustscaler', RobustScaler()),
+                ('ridge', Ridge(alpha=100, random_state=121))])",100.0,36662.94195619022,0.4989843293557179
+7,"Pipeline(steps=[('robustscaler', RobustScaler()),
+                ('ridge', Ridge(alpha=1000, random_state=121))])",1000.0,39708.62061433203,0.4122856576396434
