@@ -80,7 +80,8 @@ def rmse_cv(model,n_folds=5):
     plt.xlabel("True prices")
     plt.ylabel("Predicted prices")  
     plt.show()
-    st.text('RMSE test: {:.2f}'.format(rmse_test),'r2_score test: '+ str(r2_test))
+    st.text('RMSE test: {:.2f}'.format(rmse_test)) 
+    st.text('r2_score test: '+ str(r2_test))
     return(rmse_train,r2_train,rmse_test, r2_test)
 ols = make_pipeline(RobustScaler(), LinearRegression())
 rmse_train,r2_train,rmse_test, r2_test = rmse_cv(ols)
@@ -137,7 +138,8 @@ best_grid = grid_search.best_estimator_
 # run the model using best params
 rf_best = make_pipeline(RobustScaler(), best_grid)
 rmse_train,r2_train,rmse_test, r2_test = rmse_cv(rf)
-st.text('RMSE test: {:.2f}'.format(rmse_test),'r2_score test: '+ str(r2_test))
+st.text('RMSE test: {:.2f}'.format(rmse_test)) 
+st.text('r2_score test: '+ str(r2_test))
 
 # запуск с лучшими параметрами
 rf_best = make_pipeline(RobustScaler(), 
